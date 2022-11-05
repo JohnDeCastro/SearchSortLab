@@ -9,8 +9,8 @@ public class BinarySearchTree {
      */
     public BSTNode contains(BSTNode root, String needle) {
         // TODO: fill this out, you can choose any order of traversal
-        if(root == null){
-            return null; //tree empty, return null
+        if(root == null){ //reached leafed nodes if root == null
+            return null; //needle is not in BST, return null
         }
         else if(needle.equals(root.getData())){
             return root; //item found in root node, return root
